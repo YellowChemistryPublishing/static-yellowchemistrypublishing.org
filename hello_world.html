@@ -1,0 +1,33 @@
+---
+permalink: "{{ page.filePathStem }}.html"
+---
+
+<!DOCTYPE html>
+
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, world!</title>
+
+    <style>
+        {% include "css/default.css" %}
+    </style>
+    <style>
+        {% include "css/themes/light-yel-chem-research.css" %}
+    </style>
+</head>
+
+<body>
+    <main style="align-items: flex-start; max-width: 64em; margin-right: auto; margin-left: auto;">
+        <p>Hello, world!</p>
+        <p>
+            Welcome to the standard test page for api.yellowchemistrypublishing.org. If you see this page, it means that the server is running and the API is live.
+            This API is primarily used by cms.yellowchemistrypublishing.org, but it is also available for public use, should you wish.
+            You can use the API to access various resources and services provided by Yellow Chemistry Publishing.
+        </p>
+    </main>
+</body>
+
+</html>

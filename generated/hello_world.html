@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, world!</title>
+
+    <style>
+        * {
+    /* See https://stackoverflow.com/questions/779434/how-do-i-prevent-the-padding-property-from-changing-width-or-height-in-css. */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+
+    scroll-behavior: smooth;
+    scrollbar-color: #303030 #252525; /* moz */
+
+    /* The rectangle debugger. */
+    /*/border: 2px dashed orange;/*/
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+nav,
+section,
+footer {
+    padding: 5px 20px;
+}
+nav {
+    transition: width 0.2s;
+}
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer {
+    margin-top: auto;
+}
+
+a.button-link {
+    cursor: pointer;
+    text-align: left;
+
+    padding: 0;
+    margin: 0;
+}
+nav > a.button-link {
+    margin: 0;
+}
+
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+}
+pre.diagram {
+    padding: 0;
+    margin: 5px;
+}
+pre.diagram > svg {
+    padding: 5px;
+}
+img {
+    display: block;
+    margin: 0px 5px 15px 5px;
+}
+
+h1,
+h2,
+.big-text-but-semantically-not-h2,
+h3,
+p,
+figcaption,
+table {
+    color: inherit;
+}
+h1,
+h2,
+.big-text-but-semantically-not-h2 {
+    padding: 15px 5px;
+    margin: 0;
+}
+h1 {
+    font-size: max(2rem, 4vh);
+}
+h2,
+.big-text-but-semantically-not-h2 {
+    font-size: xx-large;
+    text-align: left;
+}
+h3,
+p,
+figcaption,
+blockquote {
+    font-size: medium;
+
+    padding: 0px 5px 15px 5px;
+    margin: 0;
+}
+blockquote {
+    display: flex;
+}
+blockquote::before
+{
+    content: "";
+    
+    flex-direction: row;
+    min-width: 5px;
+    margin: 0px 10px;
+}
+li > p {
+    padding: 0px 0px 15px 0px;
+    margin: 0;
+}
+.paper-card h3 {
+    padding-bottom: 0;
+}
+.titleText {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+table,
+tr {
+    border-spacing: 0;
+
+    padding: 0;
+    margin: 0;
+}
+th {
+    text-align: left;
+}
+th,
+td {
+    padding: 5px;
+}
+ul,
+ol {
+    padding: 0px 0px 15px 2em;
+    margin: 0;
+}
+
+    </style>
+    <style>
+        @page {
+    background-color: #1f293710;
+
+    @footnote {
+        color: #1f2937;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    @bottom-left {
+        background-color: #1f2937;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @bottom-center {
+        color: #1f2937;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @bottom-right {
+        color: #1f2937;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+.horizontal-bar {
+    background-color: #ed771d;
+}
+.horizontal-bar-light {
+    background-color: #ffffff11;
+}
+.vertical-divider {
+    background-color: #ed771d;
+}
+.info-box {
+    background-color: #0044ff66;
+    border: 2px solid #0044ff12;
+}
+.warning-box {
+    background-color: #ff000088;
+    border: 2px solid #ff00001b;
+}
+
+body {
+    background-color: #1f293710;
+}
+nav {
+    background-color: white;
+    box-shadow: 0 4px 20px -20px #111;
+}
+header {
+    background-color: #1f2937;
+    color: white;
+}
+main {
+    color: #1f2937;
+}
+footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+a.button-link:not(.button-unstyled) {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+a.button-link:not(.button-unstyled):hover {
+    background-color: #0000000d;
+}
+a.button-link:not(.button-unstyled):active {
+    background-color: #0000001f;
+}
+a.button-link.button-unstyled {
+    background-color: transparent;
+    border: none;
+}
+a.button-link.button-unstyled:hover {
+    background-color: transparent;
+}
+a.button-link.button-unstyled:active {
+    background-color: transparent;
+}
+a.button-link {
+    color: #1f2937;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 10px;
+}
+a.button-link[href="/publish"] {
+    text-decoration: 0.12em underline #ed771d !important;
+}
+a {
+    color: #1f2937;
+    text-decoration: 0.12em underline #ed771d;
+    font-weight: bold;
+}
+a.anchor-unstyled {
+    text-decoration: none;
+    color: inherit !important;
+    font-weight: inherit;
+}
+
+h1,
+h2,
+.big-text-but-semantically-not-h2 {
+    color: inherit;
+    font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3,
+p,
+figcaption,
+blockquote,
+table,
+li {
+    color: inherit;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    text-shadow: 0.08em 0.08em #1f293722;
+}
+.titleText {
+    text-align: center;
+    text-shadow: 0.12em 0.12em #1f293722;
+}
+blockquote::before {
+    color: gray;
+    background-color: gray;
+}
+
+    </style>
+</head>
+
+<body>
+    <main style="align-items: flex-start; max-width: 64em; margin-right: auto; margin-left: auto;">
+        <p>Hello, world!</p>
+        <p>
+            Welcome to the standard test page for api.yellowchemistrypublishing.org. If you see this page, it means that the server is running and the API is live.
+            This API is primarily used by cms.yellowchemistrypublishing.org, but it is also available for public use, should you wish.
+            You can use the API to access various resources and services provided by Yellow Chemistry Publishing.
+        </p>
+    </main>
+</body>
+
+</html>
