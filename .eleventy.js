@@ -7,5 +7,5 @@ export default function (eleventyConfig) {
 
     fs.rmSync("generated/", { recursive: true, force: true });
 
-    return { passthroughFileCopy: true, htmlTemplateEngine: "njk", dir: { includes: ".", data: "error-data", output: "generated" } };
+    return { passthroughFileCopy: false, htmlTemplateEngine: "njk", dir: { includes: ".", data: "error-data", output: "generated" } };
 }
