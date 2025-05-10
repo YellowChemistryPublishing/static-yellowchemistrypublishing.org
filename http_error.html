@@ -28,14 +28,17 @@ permalink: "{{ http_error.status }}.html"
         <h1>{{ http_error.status }} {{ http_error.message }}</h1>
         <p>We've {{ "<em>(not)</em>" | safe if http_error.isOk }} run into an error!</p>
         <h2>Well...</h2>
-        <img src="data:image/gif;base64, {{ "res/well.gif" | embed64 }}" alt="Rotating view of a low-poly well." style="border-radius: 10px; width: 32em;">
+        <img src="data:image/gif;base64, {{ "res/common/well.gif" | embed64 }}" alt="Rotating view of a low-poly well." style="border-radius: 10px; width: 32em; max-width: 100%;">
         <p>{{ http_error.description }}</p>
         <p>Developer documentation for this HTTP response can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#{{ http_error.moz_dev_docid }}" target="_blank" rel="noreferrer">here</a>.</p>
-        <p style="margin-top: auto; margin-left: auto;"><em>
+    </main>
+    <footer style="display: flex; flex-direction: row; align-items: flex-end; flex-wrap: wrap-reverse;">
+        <img src="data:image/svg+xml;base64, {{ "res/common/Yellow Chemistry Research Logo (Light).svg" | embed64 }}" alt="Yellow Chemistry Research Logo" style="width: 4em; padding: 0px 5px 15px 5px; margin: 0;">
+        <p style="padding: 0px 5px 15px 5px; margin-top: auto; margin-left: auto;"><em>
             Image courtesy of <a href="https://www.youtube.com/playlist?list=PLn3ukorJv4vu6pnoAtivKf5Bo_6oQS0N_" target="_blank" rel="noreferrer">Grant Abbitt</a>,
                 <a href="https://dribbble.com/shots/7294627-Water-Well-animation" target="_blank" rel="noreferrer">Venkata Ramkumar</a>.
         </em></p>
-    </main>
+    </footer>
 </body>
 
 </html>
