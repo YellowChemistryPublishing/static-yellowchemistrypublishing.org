@@ -1,0 +1,443 @@
+[
+    {
+        "status": 100,
+        "message": "Continue",
+        "isOk": true,
+        "description": "The server has received the request headers and the client should proceed to send the request body.",
+        "moz_dev_docid": "100_continue"
+    },
+    {
+        "status": 101,
+        "message": "Switching Protocols",
+        "isOk": true,
+        "description": "The server is switching protocols as requested by the client.",
+        "moz_dev_docid": "101_switching_protocols"
+    },
+    {
+        "status": 102,
+        "message": "Processing",
+        "isOk": true,
+        "description": "The server has received and is processing the request, but no response is available yet.",
+        "moz_dev_docid": "102_processing"
+    },
+    {
+        "status": 103,
+        "message": "Early Hints",
+        "isOk": true,
+        "description": "The server is sending preliminary headers before the final response.",
+        "moz_dev_docid": "103_early_hints"
+    },
+    {
+        "status": 200,
+        "message": "OK",
+        "isOk": true,
+        "description": "The request has succeeded.",
+        "moz_dev_docid": "200_ok"
+    },
+    {
+        "status": 201,
+        "message": "Created",
+        "isOk": true,
+        "description": "The request has been fulfilled and a new resource has been created.",
+        "moz_dev_docid": "201_created"
+    },
+    {
+        "status": 202,
+        "message": "Accepted",
+        "isOk": true,
+        "description": "The request has been accepted for processing, but the processing is not complete.",
+        "moz_dev_docid": "202_accepted"
+    },
+    {
+        "status": 203,
+        "message": "Non-Authoritative Information",
+        "isOk": true,
+        "description": "The server successfully processed the request, but is returning information from another source.",
+        "moz_dev_docid": "203_non_authoritative_information"
+    },
+    {
+        "status": 204,
+        "message": "No Content",
+        "isOk": true,
+        "description": "The server successfully processed the request, but is not returning any content.",
+        "moz_dev_docid": "204_no_content"
+    },
+    {
+        "status": 205,
+        "message": "Reset Content",
+        "isOk": true,
+        "description": "The server successfully processed the request, but is not returning any content and requires that the requester reset the document view.",
+        "moz_dev_docid": "205_reset_content"
+    },
+    {
+        "status": 206,
+        "message": "Partial Content",
+        "isOk": true,
+        "description": "The server is delivering only part of the resource due to a range header sent by the client.",
+        "moz_dev_docid": "206_partial_content"
+    },
+    {
+        "status": 207,
+        "message": "Multi-Status",
+        "isOk": true,
+        "description": "The message body that follows is an XML message and can contain multiple separate response codes.",
+        "moz_dev_docid": "207_multi_status"
+    },
+    {
+        "status": 208,
+        "message": "Already Reported",
+        "isOk": true,
+        "description": "The members of a DAV binding have already been enumerated in a previous part of the response and are not being included again.",
+        "moz_dev_docid": "208_already_reported"
+    },
+    {
+        "status": 226,
+        "message": "IM Used",
+        "isOk": true,
+        "description": "GitHub Copilot refused to generate a description for this one, and I can't be bothered to look it up.",
+        "moz_dev_docid": "226_im_used"
+    },
+    {
+        "status": 300,
+        "message": "Multiple Choices",
+        "isOk": true,
+        "description": "The request has more than one possible response. The user or user agent should choose one of them.",
+        "moz_dev_docid": "300_multiple_choices"
+    },
+    {
+        "status": 301,
+        "message": "Moved Permanently",
+        "isOk": true,
+        "description": "The URL of the requested resource has been changed permanently. The new URL is given in the response.",
+        "moz_dev_docid": "301_moved_permanently"
+    },
+    {
+        "status": 302,
+        "message": "Found",
+        "isOk": true,
+        "description": "The URL of the requested resource has been changed temporarily. The new URL is given in the response.",
+        "moz_dev_docid": "302_found"
+    },
+    {
+        "status": 303,
+        "message": "See Other",
+        "isOk": true,
+        "description": "The response to the request can be found under another URL using the GET method.",
+        "moz_dev_docid": "303_see_other"
+    },
+    {
+        "status": 304,
+        "message": "Not Modified",
+        "isOk": true,
+        "description": "The resource has not been modified since the last request.",
+        "moz_dev_docid": "304_not_modified"
+    },
+    {
+        "status": 305,
+        "message": "Use Proxy",
+        "isOk": true,
+        "description": "The requested resource is available only through a proxy, the address for which is provided in the response.",
+        "moz_dev_docid": "305_use_proxy"
+    },
+    {
+        "status": 306,
+        "message": "Switch Proxy",
+        "isOk": true,
+        "description": "No longer used. Originally meant \"Subsequent requests should use the specified proxy\".",
+        "moz_dev_docid": "306_switch_proxy"
+    },
+    {
+        "status": 307,
+        "message": "Temporary Redirect",
+        "isOk": true,
+        "description": "The request should be repeated with another URL, but future requests can still use the original URL.",
+        "moz_dev_docid": "307_temporary_redirect"
+    },
+    {
+        "status": 308,
+        "message": "Permanent Redirect",
+        "isOk": true,
+        "description": "The request and all future requests should be repeated using another URL.",
+        "moz_dev_docid": "308_permanent_redirect"
+    },
+    {
+        "status": 400,
+        "message": "Bad Request",
+        "isOk": false,
+        "description": "The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax).",
+        "moz_dev_docid": "400_bad_request"
+    },
+    {
+        "status": 401,
+        "message": "Unauthorized",
+        "isOk": false,
+        "description": "The request has not been applied because it lacks valid authentication credentials for the target resource.",
+        "moz_dev_docid": "401_unauthorized"
+    },
+    {
+        "status": 402,
+        "message": "Payment Required",
+        "isOk": false,
+        "description": "This response code is reserved for future use. The initial aim for creating this code was using it for digital payment systems, but that has not yet happened, and no standard convention exists.",
+        "moz_dev_docid": "402_payment_required"
+    },
+    {
+        "status": 403,
+        "message": "Forbidden",
+        "isOk": false,
+        "description": "The server understood the request but refuses to authorize it.",
+        "moz_dev_docid": "403_forbidden"
+    },
+    {
+        "status": 404,
+        "message": "Not Found",
+        "isOk": false,
+        "description": "The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.",
+        "moz_dev_docid": "404_not_found"
+    },
+    {
+        "status": 405,
+        "message": "Method Not Allowed",
+        "isOk": false,
+        "description": "The method specified in the request is not allowed for the resource identified by the request URI.",
+        "moz_dev_docid": "405_method_not_allowed"
+    },
+    {
+        "status": 406,
+        "message": "Not Acceptable",
+        "isOk": false,
+        "description": "The server cannot produce a response matching the list of acceptable values defined in the request's proactive content negotiation headers.",
+        "moz_dev_docid": "406_not_acceptable"
+    },
+    {
+        "status": 407,
+        "message": "Proxy Authentication Required",
+        "isOk": false,
+        "description": "The client must first authenticate itself with the proxy.",
+        "moz_dev_docid": "407_proxy_authentication_required"
+    },
+    {
+        "status": 408,
+        "message": "Request Timeout",
+        "isOk": false,
+        "description": "The server did not receive a complete request message within the time that it was prepared to wait.",
+        "moz_dev_docid": "408_request_timeout"
+    },
+    {
+        "status": 409,
+        "message": "Conflict",
+        "isOk": false,
+        "description": "The request could not be completed due to a conflict with the current state of the target resource.",
+        "moz_dev_docid": "409_conflict"
+    },
+    {
+        "status": 410,
+        "message": "Gone",
+        "isOk": false,
+        "description": "The target resource is no longer available at the origin server and there is no forwarding address.",
+        "moz_dev_docid": "410_gone"
+    },
+    {
+        "status": 411,
+        "message": "Length Required",
+        "isOk": false,
+        "description": "The server refuses to accept the request without a defined Content-Length.",
+        "moz_dev_docid": "411_length_required"
+    },
+    {
+        "status": 412,
+        "message": "Precondition Failed",
+        "isOk": false,
+        "description": "The server does not meet one of the preconditions that the requester put on the request.",
+        "moz_dev_docid": "412_precondition_failed"
+    },
+    {
+        "status": 413,
+        "message": "Payload Too Large",
+        "isOk": false,
+        "description": "The server is refusing to process a request because the request payload is larger than the server is willing or able to process.",
+        "moz_dev_docid": "413_payload_too_large"
+    },
+    {
+        "status": 414,
+        "message": "URI Too Long",
+        "isOk": false,
+        "description": "The server is refusing to service the request because the request-target is longer than the server is willing to interpret.",
+        "moz_dev_docid": "414_uri_too_long"
+    },
+    {
+        "status": 415,
+        "message": "Unsupported Media Type",
+        "isOk": false,
+        "description": "The origin server is refusing to service the request because the resource is in a format not supported by the server for the HTTP method used.",
+        "moz_dev_docid": "415_unsupported_media_type"
+    },
+    {
+        "status": 416,
+        "message": "Range Not Satisfiable",
+        "isOk": false,
+        "description": "The server cannot serve the requested byte range because the file is smaller than the range specified.",
+        "moz_dev_docid": "416_range_not_satisfiable"
+    },
+    {
+        "status": 417,
+        "message": "Expectation Failed",
+        "isOk": false,
+        "description": "The server cannot meet the requirements of the Expect request-header field.",
+        "moz_dev_docid": "417_expectation_failed"
+    },
+    {
+        "status": 418,
+        "message": "I'm a teapot",
+        "isOk": false,
+        "description": "Any attempt to instruct a teapot to brew coffee should result in the error code \"418 I'm a teapot\" being returned.",
+        "moz_dev_docid": "418_im_a_teapot"
+    },
+    {
+        "status": 421,
+        "message": "Misdirected Request",
+        "isOk": false,
+        "description": "The request was directed at a server that is not able to produce a response.",
+        "moz_dev_docid": "421_misdirected_request"
+    },
+    {
+        "status": 422,
+        "message": "Unprocessable Entity",
+        "isOk": false,
+        "description": "The request was well-formed but was unable to be followed due to semantic errors.",
+        "moz_dev_docid": "422_unprocessable_entity"
+    },
+    {
+        "status": 423,
+        "message": "Locked",
+        "isOk": false,
+        "description": "The resource that is being accessed is locked.",
+        "moz_dev_docid": "423_locked"
+    },
+    {
+        "status": 424,
+        "message": "Failed Dependency",
+        "isOk": false,
+        "description": "The request failed due to failure of a previous request.",
+        "moz_dev_docid": "424_failed_dependency"
+    },
+    {
+        "status": 425,
+        "message": "Too Early",
+        "isOk": false,
+        "description": "Indicates that the server is unwilling to risk processing a request that might be replayed.",
+        "moz_dev_docid": "425_too_early"
+    },
+    {
+        "status": 426,
+        "message": "Upgrade Required",
+        "isOk": false,
+        "description": "The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.",
+        "moz_dev_docid": "426_upgrade_required"
+    },
+    {
+        "status": 428,
+        "message": "Precondition Required",
+        "isOk": false,
+        "description": "The origin server requires the request to be conditional.",
+        "moz_dev_docid": "428_precondition_required"
+    },
+    {
+        "status": 429,
+        "message": "Too Many Requests",
+        "isOk": false,
+        "description": "The user has sent too many requests in a given amount of time (\"rate limiting\").",
+        "moz_dev_docid": "429_too_many_requests"
+    },
+    {
+        "status": 431,
+        "message": "Request Header Fields Too Large",
+        "isOk": false,
+        "description": "The server is unwilling to process the request because its header fields are too large.",
+        "moz_dev_docid": "431_request_header_fields_too_large"
+    },
+    {
+        "status": 451,
+        "message": "Unavailable For Legal Reasons",
+        "isOk": false,
+        "description": "The user agent requested a resource that is not available due to legal reasons, e.g., a web page censored by a government.",
+        "moz_dev_docid": "451_unavailable_for_legal_reasons"
+    },
+    {
+        "status": 500,
+        "message": "Internal Server Error",
+        "isOk": false,
+        "description": "The server encountered an unexpected condition that prevented it from fulfilling the request.",
+        "moz_dev_docid": "500_internal_server_error"
+    },
+    {
+        "status": 501,
+        "message": "Not Implemented",
+        "isOk": false,
+        "description": "The server does not support the functionality required to fulfill the request.",
+        "moz_dev_docid": "501_not_implemented"
+    },
+    {
+        "status": 502,
+        "message": "Bad Gateway",
+        "isOk": false,
+        "description": "The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.",
+        "moz_dev_docid": "502_bad_gateway"
+    },
+    {
+        "status": 503,
+        "message": "Service Unavailable",
+        "isOk": false,
+        "description": "The server is currently unable to handle the request due to temporary overloading or maintenance of the server.",
+        "moz_dev_docid": "503_service_unavailable"
+    },
+    {
+        "status": 504,
+        "message": "Gateway Timeout",
+        "isOk": false,
+        "description": "The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server or some auxiliary server it needed in order to complete the request.",
+        "moz_dev_docid": "504_gateway_timeout"
+    },
+    {
+        "status": 505,
+        "message": "HTTP Version Not Supported",
+        "isOk": false,
+        "description": "The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.",
+        "moz_dev_docid": "505_http_version_not_supported"
+    },
+    {
+        "status": 506,
+        "message": "Variant Also Negotiates",
+        "isOk": false,
+        "description": "The server has an internal configuration error: transparent content negotiation for the request results in a circular reference.",
+        "moz_dev_docid": "506_variant_also_negotiates"
+    },
+    {
+        "status": 507,
+        "message": "Insufficient Storage",
+        "isOk": false,
+        "description": "The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request.",
+        "moz_dev_docid": "507_insufficient_storage"
+    },
+    {
+        "status": 508,
+        "message": "Loop Detected",
+        "isOk": false,
+        "description": "The server detected an infinite loop while processing a request.",
+        "moz_dev_docid": "508_loop_detected"
+    },
+    {
+        "status": 510,
+        "message": "Not Extended",
+        "isOk": false,
+        "description": "Further extensions to the request are required for the server to fulfill it.",
+        "moz_dev_docid": "510_not_extended"
+    },
+    {
+        "status": 511,
+        "message": "Network Authentication Required",
+        "isOk": false,
+        "description": "The client needs to authenticate to gain network access.",
+        "moz_dev_docid": "511_network_authentication_required"
+    }
+]

@@ -1,0 +1,147 @@
+* {
+    /* See https://stackoverflow.com/questions/779434/how-do-i-prevent-the-padding-property-from-changing-width-or-height-in-css. */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+
+    scroll-behavior: smooth;
+    scrollbar-color: #303030 #252525; /* moz */
+
+    /* The rectangle debugger. */
+    /*/border: 2px dashed orange;/*/
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+nav,
+section,
+footer {
+    padding: 5px 20px;
+}
+nav {
+    transition: width 0.2s;
+}
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer {
+    margin-top: auto;
+}
+
+a.button-link {
+    cursor: pointer;
+    text-align: left;
+
+    padding: 0;
+    margin: 0;
+}
+nav > a.button-link {
+    margin: 0;
+}
+
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+}
+pre.diagram {
+    padding: 0;
+    margin: 5px;
+}
+pre.diagram > svg {
+    padding: 5px;
+}
+img {
+    display: block;
+    margin: 0px 5px 15px 5px;
+}
+
+h1,
+h2,
+.big-text-but-semantically-not-h2,
+h3,
+p,
+figcaption,
+table {
+    color: inherit;
+}
+h1,
+h2,
+.big-text-but-semantically-not-h2 {
+    padding: 15px 5px;
+    margin: 0;
+}
+h1 {
+    font-size: max(2rem, 4vh);
+}
+h2,
+.big-text-but-semantically-not-h2 {
+    font-size: xx-large;
+    text-align: left;
+}
+h3,
+p,
+figcaption,
+blockquote {
+    font-size: medium;
+
+    padding: 0px 5px 15px 5px;
+    margin: 0;
+}
+blockquote {
+    display: flex;
+}
+blockquote::before
+{
+    content: "";
+    
+    flex-direction: row;
+    min-width: 5px;
+    margin: 0px 10px;
+}
+li > p {
+    padding: 0px 0px 15px 0px;
+    margin: 0;
+}
+.paper-card h3 {
+    padding-bottom: 0;
+}
+.titleText {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+table,
+tr {
+    border-spacing: 0;
+
+    padding: 0;
+    margin: 0;
+}
+th {
+    text-align: left;
+}
+th,
+td {
+    padding: 5px;
+}
+ul,
+ol {
+    padding: 0px 0px 15px 2em;
+    margin: 0;
+}
