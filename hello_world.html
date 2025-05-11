@@ -1,5 +1,15 @@
 ---
 permalink: "{{ page.filePathStem }}.html"
+metadata:
+  title: "Hello, world!"
+  favicon_embed:
+    file: "res/common/favicon.png"
+    type: "png"
+  theme_color: "#ed771d"
+  keywords: "API, CMS, Yellow Chemistry Publishing"
+  description: "The default test page for the Yellow Chemistry Publishing API."
+  reply_to: "engineering@yellowchemistrypublishing.org"
+  copyright: "{% year %} Yellow Chemistry Publishing"
 ---
 
 <!DOCTYPE html>
@@ -7,9 +17,7 @@ permalink: "{{ page.filePathStem }}.html"
 <html lang="en-AU">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, world!</title>
+    {% include "res/includes/head_metadata.html" %}
 
     <style>
         {% include "css/default.css" %}
