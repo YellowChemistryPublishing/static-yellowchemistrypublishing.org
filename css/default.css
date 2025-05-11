@@ -11,93 +11,84 @@
     /*/border: 2px dashed orange;/*/
 }
 
-.reading-width {
-    max-width: 64em;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 html {
     width: 100%;
     height: 100%;
 }
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100%;
-    margin: 0;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 20px;
-}
+html,
+body,
+main,
 nav,
 section,
-footer {
-    padding: 5px 20px;
-}
-nav {
-    transition: width 0.2s;
-}
-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-footer {
-    margin-top: auto;
-}
-
-a.button-link {
-    cursor: pointer;
-    text-align: left;
-
-    padding: 0;
-    margin: 0;
-}
-nav > a.button-link {
-    margin: 0;
-}
-
+footer,
+img,
+table,
+tr,
+td,
+ul,
+ol,
 figure,
-figcaption {
+figcaption,
+blockquote,
+p {
     padding: 0;
     margin: 0;
 }
-pre.diagram {
+
+.zero-box {
     padding: 0;
-    margin: 5px;
+    margin: 0;
 }
-pre.diagram > svg {
+.thin-box {
     padding: 5px;
 }
-img {
-    display: block;
-    margin: 0px 5px 15px 5px;
+.med-box {
+    padding: 15px;
+}
+.thick-box {
+    padding: 15px;
+}
+.reading-box {
+    max-width: 64em;
+    width: 100%;
+    margin: 0 auto;
+}
+.main-box {
+    padding: 0px 20px;
+}
+.nav-box,
+.header-box,
+.footer-box {
+    padding: 5px 20px;
+}
+.section-box {
+    padding: 40px 20px;
 }
 
 h1,
 h2,
-.big-text-but-semantically-not-h2,
 h3,
 p,
 figcaption,
-table {
+blockquote,
+table,
+ul,
+ol,
+li {
     color: inherit;
 }
 h1,
-h2,
-.big-text-but-semantically-not-h2 {
+h2 {
     padding: 15px 5px;
     margin: 0;
 }
 h1 {
     font-size: max(2rem, 4vh);
 }
-h2,
-.big-text-but-semantically-not-h2 {
+h2 {
     font-size: xx-large;
     text-align: left;
 }
@@ -106,36 +97,39 @@ p,
 figcaption,
 blockquote {
     font-size: medium;
-
-    padding: 0px 5px 15px 5px;
-    margin: 0;
 }
 blockquote {
     display: flex;
 }
-blockquote::before
-{
+blockquote::before {
     content: "";
-    
+
     flex-direction: row;
     min-width: 5px;
     margin: 0px 10px;
 }
-li > p {
-    padding: 0px 0px 15px 0px;
-    margin: 0;
+h3,
+p,
+figcaption,
+blockquote,
+.content-box {
+    padding: 0px 5px 15px 5px;
 }
-.titleText {
-    padding: 5px;
-    margin: 10px 0px;
+li > p,
+li > h3,
+li > figcaption,
+li > blockquote,
+li > .content-box {
+    padding: 0px 0px 15px 0px;
+}
+
+img {
+    display: block;
 }
 
 table,
 tr {
     border-spacing: 0;
-
-    padding: 0;
-    margin: 0;
 }
 th {
     text-align: left;
@@ -147,5 +141,4 @@ td {
 ul,
 ol {
     padding: 0px 0px 15px 2em;
-    margin: 0;
 }

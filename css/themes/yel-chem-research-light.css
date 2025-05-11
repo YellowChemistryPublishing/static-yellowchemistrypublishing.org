@@ -23,14 +23,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-.horizontal-bar {
+.horizontal-bar-dt {
     background-color: #ed771d;
 }
-.horizontal-bar-light {
+.horizontal-bar-lt {
     background-color: #ffffff11;
-}
-.vertical-divider {
-    background-color: #ed771d;
 }
 .info-box {
     background-color: #0044ff66;
@@ -60,55 +57,8 @@ main {
     color: white;
 }
 
-a.button-link:not(.button-unstyled) {
-    background-color: transparent;
-    border: none;
-    border-radius: 10px;
-}
-a.button-link:not(.button-unstyled):hover {
-    background-color: #0000000d;
-}
-a.button-link:not(.button-unstyled):active {
-    background-color: #0000001f;
-}
-a.button-link.button-unstyled {
-    background-color: transparent;
-    border: none;
-}
-a.button-link.button-unstyled:hover {
-    background-color: transparent;
-}
-a.button-link.button-unstyled:active {
-    background-color: transparent;
-}
-a.button-link {
-    color: #1f2937;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: large;
-    text-decoration: none;
-
-    display: inline-block;
-    padding: 10px;
-}
-a.button-link[href="/publish"] {
-    text-decoration: 0.12em underline #ed771d !important;
-}
-a {
-    color: #1f2937;
-    text-decoration: 0.12em underline #ed771d;
-    font-weight: bold;
-}
-a.anchor-unstyled {
-    text-decoration: none;
-    color: inherit !important;
-    font-weight: inherit;
-}
-
 h1,
-h2,
-.big-text-but-semantically-not-h2 {
-    color: inherit;
+h2 {
     font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3,
@@ -117,16 +67,22 @@ figcaption,
 blockquote,
 table,
 li {
-    color: inherit;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
     text-align: center;
     text-shadow: 0.08em 0.08em #1f293722;
 }
-.titleText {
-    text-align: center;
-    text-shadow: 0.12em 0.12em #1f293722;
+
+a {
+    color: #1f2937;
+    text-decoration: 0.12em underline #ed771d;
+    font-weight: bold;
+}
+a.unstyled {
+    text-decoration: none;
+    color: inherit !important;
+    font-weight: inherit;
 }
 blockquote::before {
     color: gray;

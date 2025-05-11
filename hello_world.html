@@ -15,12 +15,12 @@ permalink: "{{ page.filePathStem }}.html"
         {% include "css/default.css" %}
     </style>
     <style>
-        {% include "css/themes/light-yel-chem-research.css" %}
+        {% include "css/themes/yel-chem-research-light.css" %}
     </style>
 </head>
 
-<body>
-    <main style="align-items: flex-start; max-width: 64em; margin-right: auto; margin-left: auto;">
+<body style="display: flex; flex-direction: column;">
+    <main class="main-box reading-box" style="display: flex; flex-direction: column; align-items: flex-start; flex: 1;">
         <h1>Hello, world!</h1>
         <p>
             Welcome to the standard test page for <a href="https://api.yellowchemistrypublishing.org">api.yellowchemistrypublishing.org</a>. If you see this page, it means that the server is running and the API is live.
@@ -28,8 +28,8 @@ permalink: "{{ page.filePathStem }}.html"
             You can use the API to access various resources and services provided by Yellow Chemistry Publishing.
         </p>
     </main>
-    <footer style="display: flex; flex-direction: row;">
-        <img src="data:image/svg+xml;base64, {{ "res/common/Yellow Chemistry Research Logo (Light).svg" | embed64 }}" alt="Yellow Chemistry Research Logo" style="width: 4em; padding: 0px 5px 15px 5px; margin: 0 auto 0 0;">
+    <footer class="footer-box" style="display: flex; flex-direction: row;">
+        <img class="content-box" src="data:image/svg+xml;base64, {{ "res/common/Yellow Chemistry Research Logo (Light).svg" | embed64 }}" alt="Yellow Chemistry Research Logo" style="width: 4em; margin: 0 auto 0 0;">
     </footer>
 </body>
 
