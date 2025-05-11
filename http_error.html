@@ -1,19 +1,18 @@
 ---
 pagination:
-    data: http_errors
-    size: 1
-    alias: http_error
+  data: http_errors
+  size: 1
+  alias: http_error
 permalink: "{{ http_error.status }}.html"
-metadata:
-  title: "{{ http_error.status }} {{ http_error.message }}"
-  favicon_embed:
-    file: "res/common/favicon.png"
-    type: "png"
-  theme_color: "#ed771d"
-  keywords: "HTTP, Error, Yellow Chemistry Publishing"
-  description: "{{ http_error.description }}"
-  reply_to: "engineering@yellowchemistrypublishing.org"
-  copyright: "{% year %} Yellow Chemistry Publishing"
+eleventyComputed:
+  metadata:
+    title: "{{ http_error.status }} {{ http_error.message }}"
+    favicon: "data:image/png;base64, {{ 'res/common/favicon.png' | embed64 }}"
+    theme_color: "#ed771d"
+    keywords: "HTTP, Error, Yellow Chemistry Publishing"
+    description: "{{ http_error.description }}"
+    reply_to: "engineering@yellowchemistrypublishing.org"
+    copyright: "{% year %} Yellow Chemistry Publishing"
 ---
 
 <!DOCTYPE html>

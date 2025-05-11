@@ -6,8 +6,7 @@
     "scripts": {
         "build": "npx @11ty/eleventy"
     },
-    "dependencies": {},
     "devDependencies": {
-        "@11ty/eleventy": "^3.0.0-beta.1"
+        "@11ty/eleventy": "^3.0.0-alpha.11"
     }
 }

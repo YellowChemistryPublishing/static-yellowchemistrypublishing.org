@@ -24,8 +24,6 @@
 {% endif %}
 {% if metadata.favicon %}
     <link rel="icon" href="{{ metadata.favicon }}">
-{% elif metadata.favicon_embed %}
-    <link rel="icon" href="data:image/{{ metadata.favicon_embed.type }};base64, {{ metadata.favicon_embed.file | embed64 }}">
 {% endif %}
 
 {% if metadata.author %}
