@@ -98,6 +98,9 @@ a.button {
 a.button:hover {
     background-color: #1f293711;
 }
+a.button:active {
+    background-color: #1f293718;
+}
 blockquote::before {
     color: gray;
     background-color: gray;
