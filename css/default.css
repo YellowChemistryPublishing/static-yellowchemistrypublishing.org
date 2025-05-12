@@ -142,7 +142,7 @@ img {
 
 table,
 tr {
-    border-spacing: 0;
+    border-spacing: 5px 0px;
 }
 th {
     text-align: left;
