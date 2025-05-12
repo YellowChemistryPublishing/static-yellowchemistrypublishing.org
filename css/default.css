@@ -154,7 +154,5 @@ th {
 }
 ul,
 ol {
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0px 0px 15px 2em;
 }
