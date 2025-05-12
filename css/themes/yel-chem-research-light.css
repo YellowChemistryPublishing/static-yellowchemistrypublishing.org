@@ -53,7 +53,8 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+a.button-anchor {
     font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3,
@@ -61,6 +62,7 @@ h4,
 h5,
 h6,
 p,
+a,
 figcaption,
 blockquote,
 table,
@@ -81,6 +83,18 @@ a.unstyled {
     text-decoration: none;
     color: inherit !important;
     font-weight: inherit;
+}
+a.button-anchor {
+    color: #1f2937;
+    text-decoration: unset;
+    font-weight: unset;
+
+    display: block;
+    padding: 5px;
+    margin: 0px 0px 15px 0px;
+}
+a.button-anchor:hover {
+    background-color: #1f293711;
 }
 blockquote::before {
     color: gray;

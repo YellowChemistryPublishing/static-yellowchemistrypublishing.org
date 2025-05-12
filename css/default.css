@@ -85,16 +85,16 @@ hr {
     padding-left: 15px;
 }
 
-.ptt {
+.pth {
     padding-top: 20px;
 }
-.prt {
+.prh {
     padding-right: 20px;
 }
-.pbt {
+.pbh {
     padding-bottom: 20px;
 }
-.plt {
+.plh {
     padding-left: 20px;
 }
 
@@ -107,7 +107,7 @@ hr {
 .wm {
     width: 15px;
 }
-.wt {
+.wh {
     width: 20px;
 }
 
@@ -120,7 +120,7 @@ hr {
 .hm {
     height: 15px;
 }
-.ht {
+.hh {
     height: 20px;
 }
 
@@ -133,10 +133,13 @@ hr {
 .bsm {
     border-spacing: 15px;
 }
-.bst {
+.bsh {
     border-spacing: 20px;
 }
 
+.brt {
+    border-radius: 5px;
+}
 .brm {
     border-radius: 10px;
 }
