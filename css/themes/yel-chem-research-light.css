@@ -54,7 +54,7 @@ nav {
 
 h1,
 h2,
-a.button-anchor {
+a.button {
     font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3,
@@ -84,7 +84,7 @@ a.unstyled {
     color: inherit !important;
     font-weight: inherit;
 }
-a.button-anchor {
+a.button {
     color: #1f2937;
     text-decoration: unset;
     font-weight: unset;
@@ -93,7 +93,7 @@ a.button-anchor {
     padding: 5px;
     margin: 0px 0px 15px 0px;
 }
-a.button-anchor:hover {
+a.button:hover {
     background-color: #1f293711;
 }
 blockquote::before {
