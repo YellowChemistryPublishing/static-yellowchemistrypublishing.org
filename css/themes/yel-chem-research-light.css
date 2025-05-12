@@ -24,16 +24,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 .accent-color-1 {
-    color: #ed771d;
+    color: #ed771d !important;
 }
 .accent-color-2 {
-    color: #1f2937;
+    color: #1f2937 !important;
 }
 .accent-color-bg-1 {
-    background-color: #ed771d;
+    background-color: #ed771d !important;
 }
 .accent-color-bg-2 {
-    background-color: #1f2937;
+    background-color: #1f2937 !important;
 }
 
 .info-box {
@@ -51,17 +51,6 @@ body {
 nav {
     background-color: white;
     box-shadow: 0 4px 20px -20px #111;
-}
-header {
-    background-color: #1f2937;
-    color: white;
-}
-main {
-    color: #1f2937;
-}
-.footer {
-    background-color: #1f2937;
-    color: white;
 }
 
 h1,
