@@ -92,6 +92,8 @@ a.button {
     display: block;
     padding: 5px;
     margin: 0px 0px 15px 0px;
+
+    transition: background-color 0.2s ease-in-out;
 }
 a.button:hover {
     background-color: #1f293711;
