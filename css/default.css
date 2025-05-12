@@ -45,6 +45,97 @@ p {
     margin: 0;
 }
 
+.ptz {
+    padding-top: 0px;
+}
+.prz {
+    padding-right: 0px;
+}
+.pbz {
+    padding-bottom: 0px;
+}
+.plz {
+    padding-left: 0px;
+}
+
+.ptt {
+    padding-top: 5px;
+}
+.prt {
+    padding-right: 5px;
+}
+.pbt {
+    padding-bottom: 5px;
+}
+.plt {
+    padding-left: 5px;
+}
+
+.ptm {
+    padding-top: 15px;
+}
+.prm {
+    padding-right: 15px;
+}
+.pbm {
+    padding-bottom: 15px;
+}
+.plm {
+    padding-left: 15px;
+}
+
+.ptt {
+    padding-top: 20px;
+}
+.prt {
+    padding-right: 20px;
+}
+.pbt {
+    padding-bottom: 20px;
+}
+.plt {
+    padding-left: 20px;
+}
+
+.wz {
+    width: 0px;
+}
+.wt {
+    width: 5px;
+}
+.wm {
+    width: 15px;
+}
+.wt {
+    width: 20px;
+}
+
+.hz {
+    height: 0px;
+}
+.ht {
+    height: 5px;
+}
+.hm {
+    height: 15px;
+}
+.ht {
+    height: 20px;
+}
+
+.bsz {
+    border-spacing: 0px;
+}
+.bst {
+    border-spacing: 5px;
+}
+.bsm {
+    border-spacing: 15px;
+}
+.bst {
+    border-spacing: 20px;
+}
+
 .zero-box {
     padding: 0;
     margin: 0;
