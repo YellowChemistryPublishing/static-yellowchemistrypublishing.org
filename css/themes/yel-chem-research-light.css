@@ -23,12 +23,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-.horizontal-bar-dt {
+.accent-color-1 {
+    color: #ed771d;
+}
+.accent-color-2 {
+    color: #1f2937;
+}
+.accent-color-bg-1 {
     background-color: #ed771d;
 }
-.horizontal-bar-lt {
-    background-color: #ffffff11;
+.accent-color-bg-2 {
+    background-color: #1f2937;
 }
+
 .info-box {
     background-color: #0044ff66;
     border: 2px solid #0044ff12;
