@@ -27,6 +27,7 @@ footer,
 img,
 table,
 tr,
+th,
 td,
 ul,
 ol,
@@ -71,6 +72,9 @@ p {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote,
@@ -93,6 +97,9 @@ h2 {
     text-align: left;
 }
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote {
@@ -109,6 +116,9 @@ blockquote::before {
     margin: 0px 10px;
 }
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote,
@@ -117,6 +127,9 @@ blockquote,
 }
 li > p,
 li > h3,
+li > h4,
+li > h5,
+li > h6,
 li > figcaption,
 li > blockquote,
 li > .content-box {
@@ -134,11 +147,9 @@ tr {
 th {
     text-align: left;
 }
-th,
-td {
-    padding: 5px;
-}
 ul,
 ol {
-    padding: 0px 0px 15px 2em;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 }
