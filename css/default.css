@@ -136,9 +136,12 @@ p {
     border-spacing: 20px;
 }
 
+.brm {
+    border-radius: 10px;
+}
+
 .zero-box {
     padding: 0;
-    margin: 0;
 }
 .thin-box {
     padding: 5px;
@@ -147,8 +150,22 @@ p {
     padding: 15px;
 }
 .thick-box {
-    padding: 15px;
+    padding: 20px;
 }
+
+.zero-margin {
+    margin: 0;
+}
+.thin-margin {
+    margin: 5px;
+}
+.med-margin {
+    margin: 15px;
+}
+.thick-margin {
+    margin: 20px;
+}
+
 .reading-box {
     max-width: 64em;
     width: 100%;
