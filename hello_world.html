@@ -3,7 +3,7 @@ permalink: "{{ page.filePathStem }}.html"
 eleventyComputed:
   metadata:
     title: "Hello, world!"
-    favicon: "data:image/png;base64, {{ 'res/common/favicon.png' | embed64 }}"
+    favicon: "data:image/png;base64, {{ 'res/favicon.png' | embed64 }}"
     theme_color: "#ed771d"
     keywords: "API, CMS, Yellow Chemistry Publishing"
     description: "The default test page for the Yellow Chemistry Publishing API."
@@ -16,7 +16,7 @@ eleventyComputed:
 <html lang="en-AU">
 
 <head>
-    {% include "res/includes/head_metadata.html" %}
+    {% include "include/head_metadata.html" %}
 
     <style>
         {% include "css/default.css" %}
@@ -36,7 +36,7 @@ eleventyComputed:
         </p>
     </main>
     <footer class="footer-box" style="display: flex; flex-direction: row;">
-        <img class="content-box" src="data:image/svg+xml;base64, {{ "res/common/Yellow Chemistry Research Logo (Light).svg" | embed64 }}" alt="Yellow Chemistry Research Logo" style="width: 4em; margin: 0 auto 0 0;">
+        <img class="content-box" src="data:image/svg+xml;base64, {{ "res/Yellow Chemistry Research Logo (Light).svg" | embed64 }}" alt="Yellow Chemistry Research Logo" style="width: 4em; margin: 0 auto 0 0;">
     </footer>
 </body>
 

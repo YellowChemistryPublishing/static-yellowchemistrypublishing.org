@@ -109,12 +109,19 @@ footer,
 img,
 table,
 tr,
+th,
 td,
 ul,
 ol,
 figure,
 figcaption,
 blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
     padding: 0;
     margin: 0;
@@ -153,6 +160,9 @@ p {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote,
@@ -165,7 +175,6 @@ li {
 h1,
 h2 {
     padding: 15px 5px;
-    margin: 0;
 }
 h1 {
     font-size: max(2rem, 4vh);
@@ -175,10 +184,13 @@ h2 {
     text-align: left;
 }
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote {
-    font-size: medium;
+    font-size: inherit;
 }
 blockquote {
     display: flex;
@@ -191,6 +203,9 @@ blockquote::before {
     margin: 0px 10px;
 }
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote,
@@ -199,6 +214,9 @@ blockquote,
 }
 li > p,
 li > h3,
+li > h4,
+li > h5,
+li > h6,
 li > figcaption,
 li > blockquote,
 li > .content-box {
@@ -211,14 +229,10 @@ img {
 
 table,
 tr {
-    border-spacing: 0;
+    border-spacing: 5px 0px;
 }
 th {
     text-align: left;
-}
-th,
-td {
-    padding: 5px;
 }
 ul,
 ol {
@@ -236,8 +250,7 @@ ol {
     }
 
     @bottom-left {
-        background-color: #1f2937;
-        color: white;
+        color: #1f2937;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
     @bottom-center {
@@ -252,12 +265,19 @@ ol {
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
-.horizontal-bar-dt {
-    background-color: #ed771d;
+.accent-color-1 {
+    color: #ed771d !important;
 }
-.horizontal-bar-lt {
-    background-color: #ffffff11;
+.accent-color-2 {
+    color: #1f2937 !important;
 }
+.accent-color-bg-1 {
+    background-color: #ed771d !important;
+}
+.accent-color-bg-2 {
+    background-color: #1f2937 !important;
+}
+
 .info-box {
     background-color: #0044ff66;
     border: 2px solid #0044ff12;
@@ -274,23 +294,15 @@ nav {
     background-color: white;
     box-shadow: 0 4px 20px -20px #111;
 }
-header {
-    background-color: #1f2937;
-    color: white;
-}
-main {
-    color: #1f2937;
-}
-.footer {
-    background-color: #1f2937;
-    color: white;
-}
 
 h1,
 h2 {
     font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3,
+h4,
+h5,
+h6,
 p,
 figcaption,
 blockquote,

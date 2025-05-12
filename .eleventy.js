@@ -5,9 +5,6 @@ export default function (eleventyConfig) {
     eleventyConfig.addFilter("embed64", function (value) {
         return fs.readFileSync(value, "base64");
     });
-    eleventyConfig.addFilter("obj2JSON", function (value) {
-        return JSON.stringify(value);
-    });
 
     fs.rmSync("generated/", { recursive: true, force: true });
 
