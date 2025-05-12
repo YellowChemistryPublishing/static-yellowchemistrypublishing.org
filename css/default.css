@@ -47,127 +47,127 @@ hr {
 }
 
 .ptz {
-    padding-top: 0px;
+    padding-top: 0px !important;
 }
 .prz {
-    padding-right: 0px;
+    padding-right: 0px !important;
 }
 .pbz {
-    padding-bottom: 0px;
+    padding-bottom: 0px !important;
 }
 .plz {
-    padding-left: 0px;
+    padding-left: 0px !important;
 }
 
 .ptt {
-    padding-top: 5px;
+    padding-top: 5px !important;
 }
 .prt {
-    padding-right: 5px;
+    padding-right: 5px !important;
 }
 .pbt {
-    padding-bottom: 5px;
+    padding-bottom: 5px !important;
 }
 .plt {
-    padding-left: 5px;
+    padding-left: 5px !important;
 }
 
 .ptm {
-    padding-top: 15px;
+    padding-top: 15px !important;
 }
 .prm {
-    padding-right: 15px;
+    padding-right: 15px !important;
 }
 .pbm {
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
 }
 .plm {
-    padding-left: 15px;
+    padding-left: 15px !important;
 }
 
 .pth {
-    padding-top: 20px;
+    padding-top: 20px !important;
 }
 .prh {
-    padding-right: 20px;
+    padding-right: 20px !important;
 }
 .pbh {
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
 }
 .plh {
-    padding-left: 20px;
+    padding-left: 20px !important;
 }
 
 .wz {
-    width: 0px;
+    width: 0px !important;
 }
 .wt {
-    width: 5px;
+    width: 5px !important;
 }
 .wm {
-    width: 15px;
+    width: 15px !important;
 }
 .wh {
-    width: 20px;
+    width: 20px !important;
 }
 
 .hz {
-    height: 0px;
+    height: 0px !important;
 }
 .ht {
-    height: 5px;
+    height: 5px !important;
 }
 .hm {
-    height: 15px;
+    height: 15px !important;
 }
 .hh {
-    height: 20px;
+    height: 20px !important;
 }
 
 .bsz {
-    border-spacing: 0px;
+    border-spacing: 0px !important;
 }
 .bst {
-    border-spacing: 5px;
+    border-spacing: 5px !important;
 }
 .bsm {
-    border-spacing: 15px;
+    border-spacing: 15px !important;
 }
 .bsh {
-    border-spacing: 20px;
+    border-spacing: 20px !important;
 }
 
 .brt {
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 .brm {
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 .zero-box {
-    padding: 0;
+    padding: 0px !important;
 }
 .thin-box {
-    padding: 5px;
+    padding: 5px !important;
 }
 .med-box {
-    padding: 15px;
+    padding: 15px !important;
 }
 .thick-box {
-    padding: 20px;
+    padding: 20px !important;
 }
 
 .zero-margin {
-    margin: 0;
+    margin: 0px !important;
 }
 .thin-margin {
-    margin: 5px;
+    margin: 5px !important;
 }
 .med-margin {
-    margin: 15px;
+    margin: 15px !important;
 }
 .thick-margin {
-    margin: 20px;
+    margin: 20px !important;
 }
 
 .reading-box {
