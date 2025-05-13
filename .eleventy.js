@@ -8,5 +8,5 @@ export default function (eleventyConfig) {
 
     fs.rmSync("_site/", { recursive: true, force: true });
 
-    return { passthroughFileCopy: false, htmlTemplateEngine: "njk", dir: { includes: "." } };
+    return { passthroughFileCopy: false, htmlTemplateEngine: "njk", dir: { includes: ".", data: "./_data", output: "./_site" } };
 }
