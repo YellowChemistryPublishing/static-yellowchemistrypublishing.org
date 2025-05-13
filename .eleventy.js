@@ -6,7 +6,7 @@ export default function (eleventyConfig) {
         return fs.readFileSync(value, "base64");
     });
 
-    fs.rmSync("generated/", { recursive: true, force: true });
+    fs.rmSync("_site/", { recursive: true, force: true });
 
-    return { passthroughFileCopy: false, htmlTemplateEngine: "njk", dir: { includes: ".", data: "error-data", output: "generated" } };
+    return { passthroughFileCopy: false, htmlTemplateEngine: "njk", dir: { includes: "." } };
 }
