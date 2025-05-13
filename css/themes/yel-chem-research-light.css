@@ -55,7 +55,8 @@ nav {
 h1,
 h2,
 a.button,
-button {
+button,
+.button {
     font-family: "Red Hat Display", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3,
@@ -86,7 +87,8 @@ a.unstyled {
     font-weight: inherit;
 }
 a.button,
-button {
+button,
+.button {
     color: #1f2937;
     text-decoration: unset;
     font-weight: unset;
@@ -99,11 +101,13 @@ button {
     transition: background-color 0.2s ease-in-out;
 }
 a.button:hover,
-button:hover {
+button:hover,
+.button:hover {
     background-color: #1f293711;
 }
 a.button:active,
-button:active {
+button:active,
+.button:active {
     background-color: #1f293718;
 }
 blockquote::before {
