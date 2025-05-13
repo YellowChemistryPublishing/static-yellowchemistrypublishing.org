@@ -1,2 +1,2 @@
 *.md
-/include
+**/include
