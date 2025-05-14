@@ -3,7 +3,7 @@ import fs from "node:fs";
 // This file is based on the one generated from the Nunjucks template at /public/shared-common/http_error.html.
 // Please keep it up-to-date with that template.
 
-export default function HTTPErrorPage(props) {
+export default function HTTPErrorPage(props: { prefix: string; status: number; message: string; isOk?: boolean; description: string; moz_dev_docid: string }) {
     return (
         <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "100%" }}>
             <main className="main-box reading-box" style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
