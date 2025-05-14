@@ -98,6 +98,58 @@ hr {
     padding-left: 20px !important;
 }
 
+.mtz {
+    margin-top: 0px !important;
+}
+.mrz {
+    margin-right: 0px !important;
+}
+.mbz {
+    margin-bottom: 0px !important;
+}
+.mlz {
+    margin-left: 0px !important;
+}
+
+.mtt {
+    margin-top: 5px !important;
+}
+.mrt {
+    margin-right: 5px !important;
+}
+.mbt {
+    margin-bottom: 5px !important;
+}
+.mlt {
+    margin-left: 5px !important;
+}
+
+.mtm {
+    margin-top: 15px !important;
+}
+.mrm {
+    margin-right: 15px !important;
+}
+.mbm {
+    margin-bottom: 15px !important;
+}
+.mlm {
+    margin-left: 15px !important;
+}
+
+.mth {
+    margin-top: 20px !important;
+}
+.mrh {
+    margin-right: 20px !important;
+}
+.mbh {
+    margin-bottom: 20px !important;
+}
+.mlh {
+    margin-left: 20px !important;
+}
+
 .wz {
     width: 0px !important;
 }
