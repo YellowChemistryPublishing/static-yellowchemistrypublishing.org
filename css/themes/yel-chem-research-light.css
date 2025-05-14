@@ -28,6 +28,12 @@
 .accent-color-2 {
     color: #1f2937 !important;
 }
+.accent-color-tint-1 {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(64%) saturate(1612%) hue-rotate(354deg) brightness(102%) contrast(86%) !important;
+}
+.accent-color-tint-2 {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(10%) saturate(2204%) hue-rotate(176deg) brightness(89%) contrast(89%) !important;
+}
 .accent-color-bg-1 {
     background-color: #ed771d !important;
 }
