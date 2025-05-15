@@ -265,6 +265,9 @@ h2 {
     font-size: xx-large;
     text-align: left;
 }
+h3 {
+    font-size: larger !important;
+}
 h3,
 h4,
 h5,
