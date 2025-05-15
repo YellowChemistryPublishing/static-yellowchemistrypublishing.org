@@ -239,6 +239,13 @@ hr {
     padding: 40px 20px;
 }
 
+.inline-logo {
+    display: inline;
+    vertical-align: -0.2em;
+    width: auto;
+    height: 1.2em;
+}
+
 h1,
 h2,
 h3,
